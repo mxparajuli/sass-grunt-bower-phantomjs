@@ -2,7 +2,7 @@
   "name": "sass-grunt-bower-phantomjs",
   "version": "1.0.0",
   "engines": {
-    "node": "4.2.1"
+    "node": "5.4.1"
   },
   "dependencies": {
     "bower": "^1.3.7",
@@ -57,7 +57,7 @@
     "karma-osx-reporter": "^0.2.0",
     "karma-phantomjs-launcher": "*",
     "load-grunt-tasks": "^0.4.0",
-    "phantomjs": "^1.9.17",
+    "phantomjs": "1.9.8",
     "protractor": "^1.5.0",
     "time-grunt": "^0.3.1"
   }

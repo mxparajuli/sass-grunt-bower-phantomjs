@@ -33,4 +33,4 @@ RUN \
 
 ADD package.json /tmp/package.json
 
-RUN cd /tmp && rm -rf node_modules && npm install --silent
+RUN cd /tmp && npm install --silent

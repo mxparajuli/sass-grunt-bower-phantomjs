@@ -58,6 +58,7 @@
     "karma-phantomjs-launcher": "*",
     "load-grunt-tasks": "^0.4.0",
     "phantomjs": "1.9.8",
+    "pkg-up": "^1.0.0",
     "protractor": "^1.5.0",
     "time-grunt": "^0.3.1"
   }

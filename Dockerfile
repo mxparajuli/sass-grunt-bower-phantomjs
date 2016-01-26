@@ -28,7 +28,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 RUN \
   npm install -g grunt-cli && \
   npm install -g bower && \
-  npm install -g phantomjs && \
+  npm install -g phantomjs@1.9.8 && \
   gem install compass  --no-rdoc --no-ri
 
 ADD package.json /tmp/package.json

@@ -5,7 +5,7 @@ MAINTAINER Paulo Pires @paulohp
 # Install base packages
 RUN apk update
 RUN apk upgrade
-RUN apk add --update curl wget bash git python
+RUN apk add --update curl wget bash git python make g++
 
 # # Install ruby and ruby-bundler
 # RUN apk add ruby ruby-bundler

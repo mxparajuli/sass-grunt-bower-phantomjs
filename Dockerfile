@@ -1,4 +1,4 @@
-FROM nodesource/jessie:4.3.2
+FROM node:4.4.0
 
 MAINTAINER Paulo Pires @paulohp
 

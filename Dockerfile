@@ -1,25 +1,22 @@
-FROM mhart/alpine-node:latest
+FROM mhart/alpine-node:4.4
 
 MAINTAINER Paulo Pires @paulohp
 
 # Install base packages
 RUN apk update
 RUN apk upgrade
-RUN apk add --update curl wget bash git python make g++
-
-# # Install ruby and ruby-bundler
-# RUN apk add ruby ruby-bundler
+RUN apk add wget bash git g++ python make
 
 # Clean APK cache
 RUN rm -rf /var/cache/apk/*
+RUN rm -rf /tmp/**
 
 RUN \
   npm install -g grunt-cli && \
   npm install -g bower
 
-RUN rm -rf /tmp/**
 
-COPY package.json /tmp/package.json
-COPY .npmrc /tmp/.npmrc
+ADD package.json /tmp/package.json
+ADD .npmrc /tmp/.npmrc
 
 RUN cd /tmp && npm install

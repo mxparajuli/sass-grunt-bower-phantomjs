@@ -5,7 +5,7 @@ MAINTAINER Paulo Pires @paulohp
 # Install base packages
 RUN apk update
 RUN apk upgrade
-RUN apk add wget bash git g++ python make nasm
+RUN apk add wget bash git g++ python make
 
 # Clean APK cache
 RUN rm -rf /var/cache/apk/*

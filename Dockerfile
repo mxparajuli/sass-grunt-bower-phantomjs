@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:4.4
+FROM mhart/alpine-node:5.8
 
 MAINTAINER Paulo Pires @paulohp
 

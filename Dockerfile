@@ -13,7 +13,3 @@ RUN \
   npm install -g phantomjs-prebuilt --ignore-scripts && \
   gem install compass  --no-rdoc --no-ri
 
-ADD package.json /tmp/package.json
-ADD .npmrc /tmp/.npmrc
-
-RUN cd /tmp && npm install --silent
